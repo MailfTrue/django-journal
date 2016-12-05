@@ -1,0 +1,22 @@
+{% extends 'blog/base.html' %}
+{%block content%}
+
+
+      <div class ="post">
+        <h1> <a href="{% url 'post_detail' pk=post.pk %}">{{post.title}}</a></h2>
+        <p>{% if post.published_date %}
+           <span class="date">
+             published : {{post.published_date}}
+           </span>
+           {% endif %}
+            <br/><span class ="author">by:<strong> {{post.author}}</strong></span>
+
+              {% for category in post.categories.all %}
+                <span class="category"><a href="{% url 'category_posts' category %}"> {{category}}</a></span>
+              {%endfor %}
+            </p>
+        <p>{{ post.text|linebreaksbr }}</p>
+      </div>
+
+
+{%endblock%}
