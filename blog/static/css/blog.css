@@ -44,14 +44,13 @@ h1, h2, h3, h4, .cat-heading {
 .post h1 a, .post h1 a:visited {
     color: #000000;
 }
-.author, .category, .category:visited, .cat-heading{
+.author, .category, .category:visited, .cat-heading, #admintag{
   background-color: #D4C2C2;
   text-decoration: none;
   border-radius: 5%;
   padding: 3px;
 }
-
-.category a:link, .category a:visited{
+* a:link, * a:visited{
   color:inherit;
 }
 
