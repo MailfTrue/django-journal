@@ -6,20 +6,23 @@
 {% endif%}
 <!--<p> Head over to the <a id="admintag" href="/admin">/admin</a> page and add a post to see it here!</p>-->
 {% for post in posts %}
-      <div class ="post col-xs-4">
-        <h1> <a href="{% url 'post_detail' pk=post.pk %}">{{post.title}}</a></h2>
-          <p>{% if post.published_date %}
-             <span class="date">
-               published : {{post.published_date}}
-             </span>
-             {% endif %}
-              <br/><span class ="author">by:<strong> {{post.author}}</strong></span>
+      <div class ="post short col-xs-4">
+        <h1 class="post-title"> <a href="{% url 'post_detail' pk=post.pk %}">{{post.title}}</a></h1>
+
+              <span class ="author">by:<strong> {{post.author}}</strong></span>
 
                 {% for category in post.categories.all %}
                   <span class="category"><a href="{% url 'category_posts' category %}"> {{category}}</a></span>
                 {%endfor %}
               </p>
-        <p>{{ post.text|parseme:"100"|linebreaksbr }}</p>
+        <p class = "texts">{{ post.text|parseme:"100"|linebreaksbr }}</p>
+        <p>{% if post.published_date %}
+           <span class="date">
+             <i class="fa fa-clock-o"></i>
+             {{post.published_date}}
+           </span>
+           {% endif %}
+         </p>
       </div>
 {%endfor%}
 
