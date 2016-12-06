@@ -106,7 +106,7 @@ h1, h2, h3, h4, .cat-heading {
 
 }
 
-hr{
+.post-detail  hr{
   height: 4px;
   width: 80%;
   color: #D4C2C2;

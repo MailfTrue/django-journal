@@ -15,6 +15,7 @@
                   <span class="category"><a href="{% url 'category_posts' category %}"> {{category}}</a></span>
                 {%endfor %}
               </p>
+              <hr>
         <p class = "texts">{{ post.text|parseme:"100"|linebreaksbr }}</p>
         <p>{% if post.published_date %}
            <span class="date">
