@@ -60,7 +60,7 @@ h1, h2, h3, h4, .cat-heading {
 .post h1 a:hover{
       text-decoration: underline;
 }
-.author, .category, .category:visited, .cat-heading, #admintag{
+.author, .category, .category:visited, #admintag{
   background-color: #D4C2C2;
   font-weight: bold;
   border-radius: 5%;
@@ -108,11 +108,14 @@ h1, h2, h3, h4, .cat-heading {
 }
 .cat-heading{
   display: inline-block;
-  padding: 6px;
+  padding: 10px;
   border-radius: 3%;
   font-size: 24pt;
   margin-left: 1%;
   margin-bottom: 2%;
+  font-weight: normal;
+    background-color: #AE9797;
+    color: #ffffff;
 /*  color:#ffffff;*/
 
 
@@ -151,5 +154,5 @@ hr{
   font-family: 'Lato',sans-serif;
   color: #ffffff;
   text-decoration: none;
-  border-radius: 0 0 5% 5%;
+  border-radius: 0 0 7% 7%;
 }
