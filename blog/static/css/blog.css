@@ -118,6 +118,6 @@ h1, h2, h3, h4, .cat-heading {
   margin: 0 auto;
   text-align: center;
 }
-.post-detail .author{
-  margin-top: 2%;
+.author{
+  margin-right:1%;
 }

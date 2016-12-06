@@ -10,7 +10,11 @@
              {{post.published_date}}
            </span>
            {% endif %}
-            <br/><span class ="author">by:<strong> {{post.author}}</strong></span>
+            <br/>
+             <span class ="author">
+                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                <strong> {{post.author}}</strong>
+              </span>
 
               {% for category in post.categories.all %}
                 <span class="category"><a href="{% url 'category_posts' category %}"> {{category}}</a></span>

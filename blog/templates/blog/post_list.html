@@ -9,7 +9,9 @@
       <div class ="post short col-xs-4">
         <h1 class="post-title"> <a href="{% url 'post_detail' pk=post.pk %}">{{post.title}}</a></h1>
 
-              <span class ="author">by:<strong> {{post.author}}</strong></span>
+              <span class ="author">
+                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                <strong> {{post.author}}</strong></span>
 
                 {% for category in post.categories.all %}
                   <span class="category"><a href="{% url 'category_posts' category %}"> {{category}}</a></span>
