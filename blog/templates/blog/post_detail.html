@@ -21,7 +21,7 @@
               {%endfor %}
             </p>
             <hr>
-        <p class = "detail texts">{{ post.text|linebreaksbr }}</p>
+        <p class = "detail texts">{{ post.text|safe|linebreaksbr }}</p>
       </div>
 
 
