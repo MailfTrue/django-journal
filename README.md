@@ -5,7 +5,7 @@ This a fork of https://github.com/DjangoGirls/tutorial
 
 ##TODO
 - [ ] Sticky Posts
-- [ ] Better Rendering of full posts
+- [x] Better Rendering of full posts
 
 ##Installation
 
@@ -13,7 +13,7 @@ Make sure you have Python3.5 and django>=1.9 running.
 
 Clone this repo by entering the following in a terminal
 ```
-$ git clone git@github.com:kaushiksk/django-journal.git
+$ git clone https://github.com/kaushiksk/django-journal.git
 ```
 Setting up the database and creating admin creedentials
 ```
