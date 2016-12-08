@@ -12,13 +12,14 @@
               </span>
 
                 {% for category in post.categories.all %}
-                  <span class="category"><a href="{% url 'category_posts' category %}"> {{category}}</a></span>
+                  <span class="category"><a href="{% url 'category_posts' category|replacespace %}"> {{category}}</a></span>
                 {%endfor %}
               </p>
               <hr>
         <p class = "texts">{{ post.text|parseme:"100"|linebreaksbr }}</p>
-        <p>{% if post.published_date %}
-           <span class="date">
+        <p class = "texts"> <a class="more" href="{% url 'post_detail' pk=post.pk %}">Continue Reading →</a></p>
+        <p class="date">{% if post.published_date %}
+           <span class="list-date">
              <i class="fa fa-clock-o"></i>
              {{post.published_date}}
            </span>

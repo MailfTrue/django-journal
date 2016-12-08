@@ -1,27 +1,29 @@
 {% extends 'blog/base.html' %}
+{% load blog_extras %}
 {%block content%}
 
 
       <div class="post-detail">
         <h1> <a class="post-title" href="{% url 'post_detail' pk=post.pk %}">{{post.title}}</a></h1>
         <p>{% if post.published_date %}
-           <span class="date">
+           <div class="date details">
              <i class="fa fa-clock-o"></i>
              {{post.published_date}}
-           </span>
+           </div>
            {% endif %}
-            <br/>
+            <br>
              <span class ="author">
                 <i class="fa fa-user-circle-o" aria-hidden="true"></i>
                 <strong> {{post.author}}</strong>
               </span>
 
               {% for category in post.categories.all %}
-                <span class="category"><a href="{% url 'category_posts' category %}"> {{category}}</a></span>
+                <span class="category"><a href="{% url 'category_posts' category|replacespace %}"> {{category}}</a></span>
               {%endfor %}
             </p>
             <hr>
-        <p class = "detail texts">{{ post.text|safe|linebreaksbr }}</p>
+        <p class = "detail texts">{{ post.text|safe|linebreaksbr }}
+        </p>
       </div>
 
 

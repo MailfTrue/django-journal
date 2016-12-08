@@ -28,9 +28,20 @@
 h1, h2, h3, h4, .cat-heading {
     font-family: 'Pacifico', cursive;
 }
+.date{
+  background: #f9f9f9;
+  color: #828282;
 
-.date {
-    color: #828282;
+}
+.details{
+    display:inline-block;
+}
+.list-date {
+
+    margin: 5%;
+    margin-left:0;
+    padding:2%;
+
 }
 
 .save {
@@ -159,4 +170,13 @@ hr{
   color: #ffffff;
   text-decoration: none;
   border-radius: 0 0 7% 7%;
+}
+
+.texts .more, .texts .more:visited{
+
+  margin-top: 20%;
+  color:#AE9797;
+}
+.texts .more:hover{
+  color: #D4C2C2;
 }

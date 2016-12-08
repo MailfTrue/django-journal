@@ -12,6 +12,7 @@ def post_details(request,pk):
     return render(request,'blog/post_detail.html', {'post':post})
 
 def category_posts(request,category):
+    category = category.replace("-"," ")
     post = Post.objects.filter(categories__name=category)
     return render(request, 'blog/category_posts.html', {'posts':post,
                                                         'cat':category})
