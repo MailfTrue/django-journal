@@ -1,0 +1,37 @@
+{% extends 'blog/base.html' %}
+{% load blog_extras %}
+
+
+{%block content%}
+
+{%block add%}
+{%endblock%}
+
+
+<!--<p> Head over to the <a id="admintag" href="/admin">/admin</a> page and add a post to see it here!</p>-->
+{% for post in posts %}
+      <div class ="post short col-xs-4">
+        <h1 class="post-title"> <a href="{% url 'post_detail' pk=post.pk %}">{{post.title}}</a></h1>
+
+              <span class ="author">
+                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                <strong> {{post.author}}</strong></span>
+
+                {% for category in post.categories.all %}
+                  <span class="category"><a href="{% url 'category_posts' category|replacespace %}"> {{category}}</a></span>
+                {%endfor %}
+              </p>
+              <hr>
+        <p class = "texts">{{ post.text|parseme:"100"|wordwrap:"40"|linebreaksbr }}</p>
+        <p class = "texts"> <a class="more" href="{% url 'post_detail' pk=post.pk %}">Continue Reading →</a></p>
+        <p class="date">{% if post.published_date %}
+           <span class="list-date">
+             <i class="fa fa-clock-o"></i>
+             {{post.published_date}}
+           </span>
+           {% endif %}
+         </p>
+      </div>
+{%endfor%}
+
+{%endblock%}
