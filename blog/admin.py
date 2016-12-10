@@ -4,5 +4,10 @@ from django.contrib import admin
 from .models import Post
 from .models import Category
 
-admin.site.register(Post)
+class PostAdmin(admin.ModelAdmin):
+
+    list_display = ('title', 'published_date')
+    list_filter = ['published_date','categories']
+    search_fields = ['title']
+admin.site.register(Post,PostAdmin)
 admin.site.register(Category)

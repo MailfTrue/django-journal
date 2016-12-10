@@ -71,7 +71,7 @@ h1, h2, h3, h4, .cat-heading {
 .post h1 a:hover{
       text-decoration: underline;
 }
-.author, .category, .category:visited, #admintag{
+.author, .category, .category:visited, #admintag, .add{
   background-color: #D4C2C2;
   font-weight: bold;
   border-radius: 5%;
@@ -179,4 +179,12 @@ hr{
 }
 .texts .more:hover{
   color: #D4C2C2;
+}
+
+.add, .add a, .add a:link, .add a:hover, .add a:visited{
+  display: inline-block;
+  margin: 2%;
+  color: #ffffff;
+  background-color: #AE9797;
+  padding: 2%;
 }
