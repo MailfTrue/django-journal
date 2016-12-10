@@ -71,6 +71,7 @@ h1, h2, h3, h4, .cat-heading {
 .post h1 a:hover{
       text-decoration: underline;
 }
+
 .author, .category, .category:visited, #admintag, .add{
   background-color: #D4C2C2;
   font-weight: bold;
@@ -78,6 +79,14 @@ h1, h2, h3, h4, .cat-heading {
   padding: 3px;
 }
 
+.add, .add a, .add a:link, .add a:hover, .add a:visited{
+  display: inline-block;
+  margin: 2%;
+  color: #ffffff;
+  background-color: #AE9797;
+  padding: 2%;
+  text-transform: capitalize;
+}
 .category:hover{
   color: #FFFDFD;
 }
@@ -129,8 +138,9 @@ ul{
   margin-left: 1%;
   margin-bottom: 2%;
   font-weight: normal;
-  background-color: #AE9797;
-  color: #ffffff;
+
+
+  color:#AE9797;
 /*  color:#ffffff;*/
 
 
@@ -179,20 +189,23 @@ hr{
 }
 .texts .more:hover{
   color: #D4C2C2;
+  display: table;
 }
 
-.add, .add a, .add a:link, .add a:hover, .add a:visited{
-  display: inline-block;
-  margin: 2%;
-  color: #ffffff;
-  background-color: #AE9797;
-  padding: 2%;
-}
+
 
 .star{
   display: inline-block;
   position:absolute;
   right: 3%;
   top: 3%;
+  color: #AE9797;
+}
+
+.cats, .cats a{
+  font-family: 'Roboto Slab', sans-serif;
+
+}
+.cats a:hover{
   color: #AE9797;
 }
