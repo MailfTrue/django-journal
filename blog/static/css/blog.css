@@ -188,3 +188,11 @@ hr{
   background-color: #AE9797;
   padding: 2%;
 }
+
+.star{
+  display: inline-block;
+  position:absolute;
+  right: 3%;
+  top: 3%;
+  color: #AE9797;
+}
