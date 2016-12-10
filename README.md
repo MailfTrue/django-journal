@@ -4,7 +4,7 @@ A private journal web-app that can be run and maintained on a local machine
 This a fork of https://github.com/DjangoGirls/tutorial
 
 ##TODO
-- [ ] Sticky Posts
+- [x] Sticky Posts
 - [x] Better Rendering of full posts
 
 ##Installation
@@ -28,7 +28,7 @@ Choose your preferred username, supple any dummy email, and choose your password
 
 Make sure you remember the username and password.
 
-To start the server run 
+To start the server run
 `python manage.py runserver [port]`
 
 If the port is not specified the server runs at port 8000 by default.
