@@ -23,11 +23,9 @@
            </span> {% endif %}
         </p>
     </div>
-    {% if forloop.counter0|divisibleby:2 and forloop.counter0 %}
-
-    <br>{% endif %}
-
-
+    {% if not forloop.counter0|divisibleby:2 %}
+    <p style="display:inline-block;width:90%;height:2px;"></p>
+    {% endif %}
 
     {%endfor%}
 </div>
