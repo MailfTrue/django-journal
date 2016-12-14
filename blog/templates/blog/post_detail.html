@@ -24,7 +24,7 @@
             <hr>
 
 
-        <p class = "detail texts">{{ post.text|safe }} </p>
+        <div class = "detail texts">{{ post.text|safe }} </div>
         {% ifnotequal "" prev %}
         <a class ="postlink link-left" href="{{prev}}">
         <i class="fa fa-angle-left"></i></a>

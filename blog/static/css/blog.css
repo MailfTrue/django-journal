@@ -107,11 +107,6 @@ h1, h2, h3, h4, .cat-heading {
 
 
 
-ul {
-    text-align: left;
-    margin-top: 0;
-}
-
 .post-title {
     font-family: 'Roboto Slab', sans-serif;
 }
@@ -142,8 +137,9 @@ hr {
 }
 
 .post-detail {
-    align: center;
+
     margin: 0 auto;
+    padding: 10px;
     text-align: center;
 }
 
@@ -232,7 +228,7 @@ hr {
 .postlink:active, .postlink:focus {
     outline: none;
 }
-p.detail.texts {
+.detail.texts {
     font-family: 'Roboto', sans-serif;
     margin-top: 3%;
     margin: 0 auto;
