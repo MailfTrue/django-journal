@@ -1,24 +1,27 @@
+body{
+  font-size: 12pt;
+  font-family: 'Roboto', sans-serif;
+}
+
 .page-header {
     background-color: #D5C4C4;
     margin-top: 0;
     padding: 20px 20px 20px 40px;
-
 }
 
-* a:link,  * a:hover,* a:visited{
-  color:inherit;
-  text-decoration: none;
+* a:link, * a:hover, * a:visited {
+    color: inherit;
+    text-decoration: none;
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
     color: #ffffff;
     font-size: 36pt;
     text-decoration: none;
-
-
 }
-.page-header h1{
-  display: inline-block;
+
+.page-header h1 {
+    display: inline-block;
 }
 
 .content {
@@ -28,20 +31,20 @@
 h1, h2, h3, h4, .cat-heading {
     font-family: 'Pacifico', cursive;
 }
-.date{
-  background: #f9f9f9;
-  color: #828282;
 
+.date {
+    background: #f9f9f9;
+    color: #828282;
 }
-.details{
-    display:inline-block;
+
+.details {
+    display: inline-block;
 }
+
 .list-date {
-
     margin: 5%;
-    margin-left:0;
-    padding:2%;
-
+    margin-left: 0;
+    padding: 2%;
 }
 
 .save {
@@ -57,7 +60,6 @@ h1, h2, h3, h4, .cat-heading {
     float: right;
     font-size: 26pt;
     margin-right: 20px;
-
 }
 
 .post {
@@ -66,146 +68,181 @@ h1, h2, h3, h4, .cat-heading {
 
 .post h1 a, .post h1 a:visited {
     color: #000000;
-
-}
-.post h1 a:hover{
-      text-decoration: underline;
 }
 
-.author, .category, .category:visited, #admintag, .add{
-  background-color: #D4C2C2;
-  font-weight: bold;
-  border-radius: 5%;
-  padding: 3px;
+.post h1 a:hover {
+    text-decoration: underline;
 }
 
-.add, .add a, .add a:link, .add a:hover, .add a:visited{
-  display: inline-block;
-  margin: 2%;
-  color: #ffffff;
-  background-color: #AE9797;
-  padding: 2%;
-  text-transform: capitalize;
-}
-.category:hover{
-  color: #FFFDFD;
-}
-.post{
-  display:inline-block;
-
-
-	/* border-right: solid rgb(255, 255, 255) 5px; */
-}
-.short{
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-right: 2%;
+.author, .category, .category:visited, #admintag, .add {
+    background-color: #D4C2C2;
+    font-weight: bold;
+    border-radius: 5%;
+    padding: 3px;
 }
 
-
-
-
-.texts{
-  font-family: 'Roboto', sans-serif;
-  margin-top: 3%;
-  font-size: 12pt;
-
+.add, .add a, .add a:link, .add a:hover, .add a:visited {
+    display: inline-block;
+    margin: 2%;
+    color: #ffffff;
+    background-color: #AE9797;
+    padding: 2%;
+    text-transform: capitalize;
 }
 
-.detail, * ul{
-  padding: 3%;
-  padding-left: 0;
-  width:80%;
-  font-size: 14pt;
-  font-family: 'Roboto', sans-serif;
-  align:center;
-  margin: 0 auto;
-  text-align: center;
-
-}
-ul{
-  text-align: left;
-  margin-top: 0;
-}
-.post-title{
-  font-family:'Roboto Slab', sans-serif;
-
-}
-.cat-heading{
-  display: inline-block;
-  padding: 10px;
-  border-radius: 3%;
-  font-size: 24pt;
-  margin-left: 1%;
-  margin-bottom: 2%;
-  font-weight: normal;
-
-
-  color:#AE9797;
-/*  color:#ffffff;*/
-
-
-}
-hr{
-  color: #eee;
-  background-color:#eee;
-  height: 1.5px;
-
+.category:hover {
+    color: #FFFDFD;
 }
 
-.post-detail  hr{
-  height: 4px;
-  width: 80%;
-  color: #D4C2C2;
-  background-color:#828282;
+.post {
+    display: inline-block;
+    /* border-right: solid rgb(255, 255, 255) 5px; */
 }
 
-.post-detail{
-  align:center;
-  margin: 0 auto;
-  text-align: center;
-}
-.author{
-  margin-right:0.5%;
-}
-
-.admin-but a,.admin-but a:link,.admin-but a:hover,.admin-but a:visited{
-  position: absolute;
-  display: inline-block;
-  right:1%;
-  top:0;
-  padding: 10px;
-  background-color: #AE9797;
-  font-weight: 700;
-  font-family: 'Lato',sans-serif;
-  color: #ffffff;
-  text-decoration: none;
-  border-radius: 0 0 7% 7%;
-}
-
-.texts .more, .texts .more:visited{
-
-  margin-top: 20%;
-  color:#AE9797;
-}
-.texts .more:hover{
-  color: #D4C2C2;
-  display: table;
+.short {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-right: 2%;
 }
 
 
 
-.star{
-  display: inline-block;
-  position:absolute;
-  right: 3%;
-  top: 3%;
-  color: #AE9797;
+
+ul {
+    text-align: left;
+    margin-top: 0;
 }
 
-.cats, .cats a{
-  font-family: 'Roboto Slab', sans-serif;
-
+.post-title {
+    font-family: 'Roboto Slab', sans-serif;
 }
-.cats a:hover{
-  color: #AE9797;
+
+.cat-heading {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 3%;
+    font-size: 24pt;
+    margin-left: 1%;
+    margin-bottom: 2%;
+    font-weight: normal;
+    color: #AE9797;
+    /*  color:#ffffff;*/
+}
+
+hr {
+    color: #eee;
+    background-color: #eee;
+    height: 1.5px;
+}
+
+.post-detail hr {
+    height: 4px;
+    width: 80%;
+    color: #D4C2C2;
+    background-color: #828282;
+}
+
+.post-detail {
+    align: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.author {
+    margin-right: 0.5%;
+}
+
+.admin-but a, .admin-but a:link, .admin-but a:hover, .admin-but a:visited {
+    position: absolute;
+    display: inline-block;
+    right: 1%;
+    top: 0;
+    padding: 10px;
+    background-color: #AE9797;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 0 0 7% 7%;
+}
+
+.texts .more, .texts .more:visited {
+    margin-top: 20%;
+    color: #AE9797;
+}
+
+.texts .more:hover {
+    color: #D4C2C2;
+    display: table;
+}
+
+.star {
+    display: inline-block;
+    position: absolute;
+    right: 3%;
+    top: 3%;
+    color: #AE9797;
+}
+
+.cats, .cats a {
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+.cats a:hover {
+    color: #AE9797;
+}
+
+.postlink.link-left {
+    left: 0;
+}
+
+.postlink.link-right {
+    right: 0;
+}
+
+.postlink, .postlink:visited {
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    margin: 0;
+    max-width: 10%;
+    min-width: 6%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    font-size: 40px;
+    color: #ccc;
+    text-align: center;
+    -webkit-transition: all 350ms ease;
+    -moz-transition: all 350ms ease;
+    -o-transition: all 350ms ease;
+    transition: all 350ms ease;
+}
+
+.postlink:hover {
+    text-decoration: none;
+    color: #444;
+}
+
+.postlink:visited {
+    text-decoration: none;
+}
+
+.postlink:active, .postlink:focus {
+    outline: none;
+}
+p.detail.texts {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 3%;
+    margin: 0 auto;
+    width: 80%;
+    padding: 10px 2% 10px;
+    font-size: 12pt;
+    text-align: left;
+}
+
+
+#tinymce .mceContentBody p {
+   font-family: 'Roboto', sans-serif !important;
 }

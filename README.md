@@ -3,25 +3,28 @@ A private journal web-app that can be run and maintained on a local machine
 
 This a fork of https://github.com/DjangoGirls/tutorial
 
-##TODO
+## Requirements
+This app require Python3, django>=1.9 and django-tinymce to run.
+
+## TODO
 - [x] Sticky Posts
 - [x] Better Rendering of full posts
 
-##Installation
-
-Make sure you have Python3.5 and django>=1.9 running.
+## Installation
 
 Clone this repo by entering the following in a terminal
 ```
 $ git clone https://github.com/kaushiksk/django-journal.git
 ```
 Setting up the database and creating admin creedentials
+Make sure you have a  fresh virtualenv running Python3
 ```
-$ cd django-journal
-$ python manage.py migrate
+(myenv)$ cd django-journal
+(myenv)$ pip install django django-tinymce
+(myenv)$ python manage.py migrate
 .
 .
-$ python manage.py createsuperuser
+(myenv)$ python manage.py createsuperuser
 ```
 
 Choose your preferred username, supple any dummy email, and choose your password.
